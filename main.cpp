@@ -32,7 +32,7 @@ int main()
 	} 
 	
 	else if (grade >= 94) {
-		cout << "\n1.25 Nice grade ;) \n" << endl;
+		cout << "\n1.25 Nice grade \n" << endl;
 	}
 	
 	else if (grade >= 91) {
