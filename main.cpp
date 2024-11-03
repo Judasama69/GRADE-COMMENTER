@@ -16,48 +16,56 @@ int main()
 		73-75  | 3.0
 	*/  
 	int grade;
+	string subject;
 	
-	cout << "Enter your grade this semester: ";
+	cout << "Enter your subject: ";
+	cin >> subject;
+	
+	cout << "Enter your subject's grade this semester: ";
 	cin >> grade;
+	
+	cout << "\n" << subject << " " << "Final Semester Grade: " << endl;
 	
 	// Nested Else if Statement
 	if (grade >= 97) {
-		cout << "\nFlat 1 idol \n" << endl;
+		cout << "\n1.0 Flat 1 idol \n" << endl;
 	} 
 	
-	else if (grade >= 93 ) {
-		cout << "\nNice grade ;) \n" << endl;
+	else if (grade >= 94) {
+		cout << "\n1.25 Nice grade ;) \n" << endl;
 	}
 	
-	else if (grade >= 90) {
-		cout << "\nNot bad :) \n" << endl;
+	else if (grade >= 91) {
+		cout << "\n1.50 Not bad \n" << endl;
 	}
 	
-	else if (grade >= 87) {
-		cout << "\nOkay na na \n" << endl;
+	else if (grade >= 88) {
+		cout << "\n1.75 Okay na na \n" << endl;
 	}
 	
-	else if (grade >= 84) {
-		cout << "\nWarm up pa ni \n" << endl;
+	else if (grade >= 85) {
+		cout << "\n2.0 Warm up pa ni \n" << endl;
 	}
 	
-	else if (grade >= 81) {
-		cout << "\nAtleast pasar \n" << endl;
+	else if (grade >= 82) {
+		cout << "\n2.25 Atleast pasar \n" << endl;
 	}
 	
-	else if (grade >= 78) {
-		cout << "\nImportante naninoud ug nagtinarong kog skwela \n" << endl;
+	else if (grade >= 79) {
+		cout << "\n2.50 Importante naninoud ug nagtinarong kog skwela \n" << endl;
 	}
 	
-	else if (grade >= 75) {
-		cout << "\nNaa ra siguro koy kulang :)\n" << endl;
+	else if (grade >= 76) {
+		cout << "\n2.75 Naa ra siguro koy kulang :)\n" << endl;
 	}
 	
-	else if (grade <=74) {
-		cout << "\nShift course nlng pre :) \n" << endl;
+	else if (grade >= 73) {
+		cout << "\n3.0 bawal daw tres ang grado sa major sub :)\n" << endl;
 	}
 	
-	system("pause");
-	system("cls");
-	return main();
+	else if (grade <= 72) {
+		cout << "\nbawi next year pre :) \n" << endl;
+	}
+	
+	return 0;
 }
